@@ -49,106 +49,6 @@ function Game() {
 }
 
 
-//__________________________________________________________
-//AUDIO FUNCTION
-//__________________________________________________________
-
-//variables for audio function
-var cudi = document.getElementById("kidcudi");
-var carti = document.getElementById("playboicarti");
-var kodak = document.getElementById("kodakblack");
-var greedo = document.getElementById("03greedo");
-var shoreline = document.getElementById("shorelinemafia");
-var drakeo = document.getElementById("drakeotheruler");
-var nip = document.getElementById("nipseyhussle");
-
-
-function aud() {
-    //Arthur Audio & Image
-    //---------------------------
-    if (randomWord === words[0]) {
-        scoobydoo.pause();
-        spongebob.pause();
-        danny.pause();
-        teent.pause();
-        simpsons.pause();
-        r.pause();
-        a.play();
-        document.getElementById("image").src = "./assets/images/arther.gif";
-    }
-    //Rugrats Audio & Image
-    //---------------------------
-    else if (randomWord === words[1]) {
-        scoobydoo.pause();
-        spongebob.pause();
-        danny.pause();
-        teent.pause();
-        simpsons.pause();
-        a.pause();
-        r.play();
-        document.getElementById("image").src = "./assets/images/rugrats.gif";
-    }
-    //Simpsons Audio & Image
-    //---------------------------
-    else if (randomWord === words[2]) {
-        scoobydoo.pause();
-        spongebob.pause();
-        danny.pause();
-        teent.pause();
-        r.pause();
-        a.pause();
-        simpsons.play();
-        document.getElementById("image").src = "./assets/images/simpsons.gif";
-    }
-    //Scooby-doo Audio & Image
-    //---------------------------
-    else if (randomWord === words[3]) {
-        spongebob.pause();
-        danny.pause();
-        teent.pause();
-        simpsons.pause();
-        r.pause();
-        a.pause();
-        scoobydoo.play();
-        document.getElementById("image").src = "./assets/images/scooby.gif";
-    }
-    //Spongebob Audio & Image
-    //---------------------------
-    else if (randomWord === words[4]) {
-        danny.pause();
-        teent.pause();
-        simpsons.pause();
-        r.pause();
-        a.pause();
-        scoobydoo.pause();
-        spongebob.play();
-        document.getElementById("image").src = "./assets/images/spongebob.gif";
-    }
-    //Danny Audio & Image
-    //---------------------------
-    else if (randomWord === words[5]) {
-        spongebob.pause();
-        teent.pause();
-        simpsons.pause();
-        r.pause();
-        a.pause();
-        scoobydoo.pause();
-        danny.play();
-        document.getElementById("image").src = "./assets/images/danny.gif";
-    }
-    //Teen Titans Audio & Image
-    //---------------------------
-    else if (randomWord === words[6]) {
-        spongebob.pause();
-        danny.pause();
-        simpsons.pause();
-        r.pause();
-        a.pause();
-        scoobydoo.pause();
-        teent.play();
-        document.getElementById("image").src = "./assets/images/teen.gif";
-    }
-};
 
 //__________________________________________________________
 //RESET FUNCTION
@@ -218,11 +118,6 @@ function complete() {
     document.getElementById("guessesremaining").innerHTML = " " + guessesRemaining;
 }
 
-
-//>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>
-//_____________________________________________________
-// EXECUTE CODE 
-//_____________________________________________________
 
 //call start game function
 Game()
